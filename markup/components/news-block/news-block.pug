@@ -1,0 +1,12 @@
+mixin news-block(data)
+    include ../news/news.pug
+    .news-block
+        h3.news-block__title FROM THE BLOG
+        .news-block__body
+            .news-block__element
+                +news()
+            .news-block__element
+                +news()
+            .news-block__element
+                +news()
+

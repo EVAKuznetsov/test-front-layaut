@@ -1,0 +1,74 @@
+// Common styles of the project
+@import './entry/components/menu';
+@import './entry/components/_left-sidebar';
+@import './entry/components/title-block';
+@import './entry/components/cards-block';
+@import './entry/components/note-block';
+@import './entry/components/news-block';
+@import './entry/components/news';
+@import './entry/components/footer';
+@import './entry/components/social-list';
+
+
+
+html, body {
+    height: 100%;
+}
+html{
+    background: $color-bg-page;
+    font-family: "Poppins";
+}
+.container{
+    width: 1600px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row;
+}
+.page {
+    background: $color-bg-page;
+    width:100%;
+    display: inline-block;
+}
+.page_write{
+    background: rgb(255,255,255)
+}
+
+.page__wrapper {
+    min-height: 100%;
+    margin-bottom: -50px;
+}
+
+* html .page__wrapper {
+    height: 100%;
+}
+
+.page__buffer {
+    height: 50px;
+}
+.center-block{
+    width: 100%;
+}
+
+.button-common{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1;
+    background-color: $color-accent;
+    border: 0px;
+    border-radius:40px;
+    width: 200px;
+    padding: 20px 0;
+
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+  
+  
+
+
+  

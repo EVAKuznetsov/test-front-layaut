@@ -1,0 +1,24 @@
+.news-block{
+    padding: 120px;
+    &__title{
+        margin: 0;
+        margin-left: 2px;
+        font-size: 44px;
+        color: $color-bg-page;
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 0.709;
+    }
+    &__title:before{
+        @include after-line;
+        height: 4px;
+        width: 60px;
+        margin-bottom: 30px;
+    }
+    &__body{
+        margin-top: 60px;
+    }
+    &__element{
+        margin-bottom: 60px;
+    }
+}

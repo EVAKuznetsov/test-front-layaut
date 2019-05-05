@@ -1,0 +1,35 @@
+.menu-item-list{
+    @include nl();
+    display: flex;    
+    color:$color-text;
+    line-height: 1.95;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    &__item{
+        color:$color-menu-item;
+        text-align: center;
+        transition: .2s;
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    &_row{
+        flex-flow: row nowrap;
+        justify-content: space-around;
+    }
+    &_row &__item{
+        line-height: 1;
+        margin: 20px auto;
+    }
+    &_column{
+        flex-flow: column nowrap;
+        justify-content: space-around;
+    }
+    &_column &__item{
+        line-height: 1;
+        margin: 20px auto;
+    }
+
+}

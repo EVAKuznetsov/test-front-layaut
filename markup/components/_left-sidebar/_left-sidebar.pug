@@ -1,0 +1,13 @@
+mixin _left-sidebar(data)
+    include ../menu/menu.pug
+    section.left-sidebar
+        .left-sidebar__label sds
+        .left-sidebar__separator
+        .left-sidebar__menu
+            +menu()
+        .left-sidebar__separator
+        //- .left-sidebar__search
+        .left-sidebar__search-block
+            i(class="fa fa-search" aria-hidden="true")
+
+

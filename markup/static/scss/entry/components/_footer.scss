@@ -1,0 +1,27 @@
+.footer{
+    padding: 80px 120px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    &__info ul{
+        display: flex;
+        flex-flow: row;        
+    }  
+    &__info ul li{
+        margin-right: 50px;
+        &:last-child{
+            margin-right: 0px;
+        }
+    }  
+    &__copyrite{
+        font-size: 16px;
+        color: rgba(255, 255, 255, 0.302);
+        line-height: 1.875;
+    }
+    &__social{
+        padding-top: 14px;
+        width: 145px;
+    }
+}
+
+  

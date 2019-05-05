@@ -1,0 +1,16 @@
+mixin content(data)
+    include ../title-block/title-block.pug     
+    include ../cards-block/cards-block.pug     
+    include ../note-block/note-block.pug     
+    include ../news-block/news-block.pug     
+    .page
+        +title-block()
+    .page.page_write
+        +cards-block()
+    .page
+        +note-block()
+    .page.page_write
+        +news-block()       
+
+
+    

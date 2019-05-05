@@ -1,0 +1,43 @@
+.note-block{
+    display: flex;
+    background: url('%=static=%assets/note-block/quotes-bg.svg') no-repeat;
+    // background-size: 400px 315px;
+    background-position: center;
+    &__body{
+        width: 780px;
+        margin: 140px auto 150px auto;
+        display: flex;
+        flex-flow: column;
+    }
+    &__quotes{
+        width: 45px;
+        height: 45px;
+        background: url('%=static=%assets/note-block/quotes.png') no-repeat;
+    }
+    &__text{
+        font-size: 28px;
+        color:$color-bg;
+        line-height: 1.357;
+        font-style: italic;
+        margin-top: 20px;
+        margin-bottom: 65px;
+    }
+    &__caption{        
+        display: flex;
+
+        & span{
+            font-size: 20px;
+            color: $color-caption;
+            line-height: 1.5;
+            margin-top: 20px;
+
+        }
+        &:before{
+            @include after-line;            
+            width: 60px;
+            height: 5px;
+            background-color: $color-caption;
+            position: absolute;
+        }
+    }
+}

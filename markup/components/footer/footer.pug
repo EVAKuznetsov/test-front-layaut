@@ -1,0 +1,10 @@
+mixin footer(data)
+    include ../menu/menu.pug
+    include ../social-list/social-list.pug
+
+    .footer
+        .footer__info    
+            +menu()
+            p.footer__copyrite (c) 2018 NAME. All rights reserved.
+        .footer__social
+            +social-list()
